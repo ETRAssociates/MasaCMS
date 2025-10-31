@@ -781,7 +781,7 @@ private function caseInsensitiveOrderBy(required orderBy) output=false {
 			table = listfirst(column, ".");
 			column = listrest(column, ".");
 		}
-		if ( len(column) && structkeyexists(application.objectMappings, table) && structkeyexists(application.objectMappings[table]["columns"], column) && listfindnocase("char,varchar", application.objectMappings[table]["columns"][column]["dataType"]) ) {
+		if ( len(column) && structkeyexists(application.objectMappings, table) && structkeyexists(application.objectMappings[table],"columns") && structkeyexists(application.objectMappings[table]["columns"], column) && listfindnocase("char,varchar", application.objectMappings[table]["columns"][column]["dataType"]) ) {
 			orderByList = listappend(orderByList, "lower(" & column & ") " & listrest(orderByValue, " "));
 		} else {
 			orderByList = listappend(orderByList, orderByValue);
