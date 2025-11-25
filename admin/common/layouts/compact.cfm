@@ -298,7 +298,7 @@ This file is part of Mura CMS.
 				indexfileinapi: #rc.$.globalConfig('indexfileinapi')#
 			});
 		</script>
-		#rc.ajax#
+		#request.ajax#
 
 		<cfif cgi.http_user_agent contains 'msie'>
 			<!--[if lte IE 8]>
