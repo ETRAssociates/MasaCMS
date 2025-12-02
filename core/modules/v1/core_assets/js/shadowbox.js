@@ -453,14 +453,11 @@
 
             loading:    'Loading',
 
-            //close:      '<span class="shortcut">C</span>lose',
-            close:     '×', 
+            close:     '<i class="fas fa-times" title="[C]lose"></i>', 
 
-            //next:       '<span class="shortcut">N</span>ext',
-            next:      '⏵', 
+            next:      '<i class="fas fa-caret-right" title="[N]ext"></i>', 
 
-            //prev:       '<span class="shortcut">P</span>revious',
-            prev:      '⏴',
+            prev:      '<i class="fas fa-caret-left" title="[P]revious"></i>',
 
             errors:     {
                 single: 'You must install the <a href="{0}">{1}</a> browser plugin to view this content.',
